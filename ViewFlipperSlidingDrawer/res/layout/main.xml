@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android" 
+			android:id="@+id/flipper"
+            android:layout_width="fill_parent" 
+            android:layout_height="fill_parent">
+
+
+  <FrameLayout android:layout_width="fill_parent" 
+            android:layout_height="wrap_content"
+            android:layout_gravity="top" 
+            android:layout_marginTop="50dip">
+
+   <TextView
+            android:layout_height="wrap_content"
+            android:id="@+id/firstpanel"
+            android:paddingTop="10dip"
+            android:text="my first panel"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:textStyle="bold" >
+        </TextView>
+           
+     </FrameLayout>
+
+
+  <LinearLayout android:layout_width="fill_parent"
+             android:layout_height="wrap_content" 
+             android:orientation="vertical"             
+             android:padding="20dip"
+             android:layout_gravity="top" 
+             android:layout_marginTop="50dip">
+
+   <TextView android:layout_width="wrap_content" 
+             android:layout_height="wrap_content"
+          android:text="TEST" 
+          android:layout_gravity="center" 
+          android:padding="15dip"
+          android:textSize="22dip" />
+
+   <Button android:text="Go Back" 
+           android:id="@+id/back_btn"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" />
+
+
+  </LinearLayout>
+
+<FrameLayout
+             android:layout_width="wrap_content"
+          android:layout_height="230dip" 
+          android:id="@+id/frameLayout" 
+          android:layout_gravity="bottom">
+
+ <SlidingDrawer android:layout_height="wrap_content"
+             android:handle="@+id/handle" 
+             android:content="@+id/content"
+             android:id="@+id/slide" 
+             android:orientation="vertical"
+             android:layout_width="fill_parent">
+             
+
+  <ImageView android:layout_width="55dip"
+          android:layout_height="55dip" 
+          android:id="@id/handle" 
+          android:src="@android:drawable/arrow_down_float"  />
+
+
+  <LinearLayout android:layout_width="wrap_content"
+             android:layout_height="wrap_content" 
+             android:id="@id/content"
+             android:orientation="vertical"              
+             android:padding="10dip">
+
+   <Button android:text="Test1" 
+           android:id="@+id/Button01"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" />
+
+   <Button android:text="Test2" 
+           android:id="@+id/Button02"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" />
+
+   <Button android:text="Test3" 
+           android:id="@+id/Button03"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" />
+
+
+  </LinearLayout>
+ </SlidingDrawer>
+</FrameLayout>
+ </ViewFlipper>
+ 
+ 
