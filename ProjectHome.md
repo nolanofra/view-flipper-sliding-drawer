@@ -1,0 +1,1 @@
+little example of an android app containing a view flipper and a sliding drawer
